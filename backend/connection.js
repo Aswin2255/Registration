@@ -3,7 +3,7 @@ const state = {
     db:null
 }
 module.exports.connect=function(done){
-    const url = 'mongodb+srv://aswin:1234@cluster0.xhsjgb7.mongodb.net/?retryWrites=true&w=majority'
+    const url = '"mongodb://0.0.0.0:27017/registration"'
     const dbname = 'register'
     mongoClient.connect(url,(err,data)=>{
         console.log('hereeee')
